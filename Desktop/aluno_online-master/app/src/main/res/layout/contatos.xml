@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView_item_person"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_profile_picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            tools:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView_profile_picture"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:textSize="30dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+            tools:text="Breno Tagas" />
+
+        <TextView
+            android:id="@+id/textView_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/textView_name"
+            android:layout_below="@id/textView_name"
+            android:layout_marginStart="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            tools:text="1731088037" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
